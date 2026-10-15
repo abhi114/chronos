@@ -1,8 +1,8 @@
 import gsap, { ScrollTrigger, SplitText } from "gsap/all";
 import { useGSAP } from "@gsap/react";
-import colimg1 from "../../assets/cap1-square.jpg";
-import colimg2 from "../../assets/cap2-square.jpg";
-import colimg3 from "../../assets/cap3-square.jpg";
+import colimg1 from "../../assets/watch-1.jpg";
+import colimg2 from "../../assets/watch-2.jpg";
+import colimg3 from "../../assets/watch-3.jpg";
 import { useState } from "react";
 
 const StickyCols = () => {
@@ -79,22 +79,24 @@ const StickyCols = () => {
                 <div className="col col-1">
                     <div className="col-content">
                         <div className="col-content-wrapper">
-                            <h1 className="text-2xl text-[#b1a696] font-bold leading-auto">Enjoy the view
+                            <h1 className="text-2xl text-[#b1a696] font-bold leading-auto">Admire the finish
                                 <br />
-                                through—the wide
+                                through—the
                                 <br />
-                                panoramic glass
+                                exhibition
                                 <br />
-                                window
+                                sapphire
+                                <br />
+                                caseback
                             </h1>
                             <div className="col-content-para flex items-center gap-4 justify-between">
                                 <div className="flex items-center gap-0 justify-center">
                                     <h3 className="border-1 px-3 py-1 rounded-full text-[#aaa091]">1</h3>
                                     <h3 className="border-1 px-3 py-1 rounded-full text-[#524e4b]">3</h3>
                                 </div>
-                                <p className={`text-[12px] font-medium  ${!reveal ? "mr-6" : "mr-0"}`}> Get closer to the desert nature than ever before
+                                <p className={`text-[12px] font-medium  ${!reveal ? "mr-6" : "mr-0"}`}> See the in-house calibre beating through sapphire
                                     <br />
-                                    and admire this unique, breathtaking landscape.
+                                    and admire its hand-finished bridges and rotor.
                                 </p>
                             </div>
 
@@ -115,42 +117,46 @@ const StickyCols = () => {
                 </div>
                 <div className="col col-3">
                     <div className="col-content-wrapper">
-                        <h1 className="text-2xl font-bold leading-auto">Enjoy the view
-                            <br />
-                            through—the wide
-                            <br />
-                            panoramic glass
-                            <br />
-                            window
+                        <h1 className="text-2xl font-bold leading-auto">Admire the finish
+                                <br />
+                                through—the
+                                <br />
+                                exhibition
+                                <br />
+                                sapphire
+                                <br />
+                                caseback
                         </h1>
                         <div className={`col-content-para flex items-center gap-4 justify-between ${reveal ? "ml-0" : "ml-6"}`}>
                             <div className="flex items-center gap-0 justify-center">
                                 <h3 className="border-1 px-3 py-1 rounded-full text-[#aaa091]">{(reveal) ? "3" : "2"}</h3>
                                 <h3 className="border-1 px-3 py-1 rounded-full text-[#524e4b]">3</h3>
                             </div>
-                            <p className="text-[12px] font-medium"> Get closer to the desert nature than ever before
+                            <p className="text-[12px] font-medium"> See the in-house calibre beating through sapphire
                                 <br />
-                                and admire this unique, breathtaking landscape.
+                                and admire its hand-finished bridges and rotor.
                             </p>
                         </div>
                     </div>
                     <div className="col-content-wrapper-2">
-                        <h1 className="text-2xl font-bold leading-auto">Enjoy the view
-                            <br />
-                            through—the wide
-                            <br />
-                            panoramic glass
-                            <br />
-                            window
+                        <h1 className="text-2xl font-bold leading-auto">Admire the finish
+                                <br />
+                                through—the
+                                <br />
+                                exhibition
+                                <br />
+                                sapphire
+                                <br />
+                                caseback
                         </h1>
                         <div className="col-content-para flex items-center gap-4 justify-between">
                             <div className="flex items-center gap-0 justify-center">
                                 {/* <h3 className="border-1 px-3 py-1 rounded-full text-[#aaa091]">3</h3>
                                 <h3 className="border-1 px-3 py-1 rounded-full text-[#524e4b]">3</h3> */}
                             </div>
-                            <p className={`text-[12px] font-medium  ${!reveal ? "mr-0" : "mr-6"}`}> Get closer to the desert nature than ever before
+                            <p className={`text-[12px] font-medium  ${!reveal ? "mr-0" : "mr-6"}`}> See the in-house calibre beating through sapphire
                                 <br />
-                                and admire this unique, breathtaking landscape.
+                                and admire its hand-finished bridges and rotor.
                             </p>
                         </div>
                     </div>

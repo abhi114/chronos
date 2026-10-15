@@ -143,7 +143,7 @@ const Preloader = () => {
             <div className="preloader-progress">
                 <div className="preloader-progress-bar"></div>
                 <div className="preloader-logo">
-                    <h1 ref={preloaderLogoRef} className="logo-text">Capsule</h1>
+                    <h1 ref={preloaderLogoRef} className="logo-text">CHRONOS</h1>
                 </div>
             </div>
 
@@ -152,8 +152,11 @@ const Preloader = () => {
             <div className="preloader-content">
                 <div className="preloader-footer">
                     <p>
-                        Spaces unfold in light and shadow, where structure finds its quiet
-                        rhythm, and time aligns harmony.
+                        Time unfolds in light and shadow, where gears find their quiet
+                        rhythm, and craft aligns harmony.
+                    </p>
+                    <p className="preloader-credit mt-3 text-[0.7rem] tracking-[0.25em] uppercase opacity-70">
+                        Made with <span className="preloader-heart">♥</span> by A.N
                     </p>
                 </div>
             </div>

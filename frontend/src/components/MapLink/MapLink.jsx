@@ -12,8 +12,8 @@ const MapLink = () => {
                 </p>
 
                 <h1 className="text-[5vw] leading-15 tracking-tight mt-5 text-[#f4efe7]">
-                    Our Capsules® are located<br />
-                    near Los Angeles with easy<br />
+                    Our boutiques are located<br />
+                    in Geneva, Paris and Tokyo with<br />
                 </h1>
             </div>
 
@@ -25,7 +25,7 @@ const MapLink = () => {
                 onMouseLeave={() => setActive(false)}
                 className="text-[#b1a696] text-[5vw] underline hover:text-[#f4efe7]"
             >
-                access by road.
+                private viewings by appointment.
             </a>
         </section>
     );

@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react';
-import banner from '../../assets/background3.png';
+import banner from '../../assets/hero-watch3.jpg';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import ClickIndicator from '../MapLink/ClickIndicator';
@@ -41,23 +41,23 @@ const FooterBanner = () => {
                     onMouseLeave={() => setActive(false)}
                     ref={fbImgRef} src={banner} alt="" className='w-full h-full object-cover' />
 
-                <h1 className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[10vw] font-bold text-[#f4efe7]'>Capsules<sub className='text-[5vw]'>®</sub></h1>
+                <h1 className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[10vw] font-bold text-[#f4efe7]'>CHRONOS<sub className='text-[5vw]'>®</sub></h1>
                 <div className='absolute bottom-5 px-4 w-full'>
                     <div className="w-full h-auto flex md:flex-row flex-col md:justify-between md:items-end">
                         <h2
                             className="text-start lg:mt-0 md:text-[#f4efe7] text-[#b1a696] text-2xl font-bold md:tracking-wider leading-5 flex flex-col gap-1"
                             style={{ textShadow: '2px 2px 4px #000' }}
                         >
-                            <span>Closer to</span>
-                            <span>Nature—Closer</span>
-                            <span>to Yourself</span>
+                            <span>Time, Perfected—</span>
+                                <span>Crafted for</span>
+                                <span>Eternity</span>
                         </h2>
 
                         <p
                             className="md:w-[20%] w-[80%] text-[#f4efe7] text-[0.7rem] font-bold  md:font-medium tracking-wide lg:text-end mt-2 text-justify"
                             style={{ textShadow: '2px 2px 4px #000' }}
                         >
-                            Spend unforgettable and remarkable time in the Californian desert with—Capsules.
+                            Swiss-made mechanical timepieces, hand-finished in our Geneva atelier since—1924.
                         </p>
                     </div>
                 </div>

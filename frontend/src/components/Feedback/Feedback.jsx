@@ -2,9 +2,9 @@ import { useState } from "react";
 import { IoMdArrowForward, IoMdArrowBack } from "react-icons/io";
 import { feedbackH1LG, feedbackReviewLG } from "../../constants/feedback";
 
-import review1 from "../../assets/review1.png";
-import review2 from "../../assets/review2.png";
-import review3 from "../../assets/review3.png";
+import review1 from "../../assets/face1.jpg";
+import review2 from "../../assets/face2.jpg";
+import review3 from "../../assets/face3.jpg";
 
 const reviewImages = {
     review1,
@@ -30,7 +30,7 @@ const Feedback = () => {
         <section className='w-sereen h-dvh p-8 flex flex-col justify-center items-center'>
             <div className='w-full text-left'>
                 <p className='text-[.7rem] font-bold text-[#eae5dd] activities-subtitle text-left'>
-                    Do people like us?
+                    What do collectors say?
                 </p>
 
                 <div>

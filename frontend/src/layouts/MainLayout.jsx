@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { ScrollSmoother } from "gsap/all";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Navbar from "../components/Navbar/Navbar";
+import MenuOverlay from "../components/MenuOverlay/MenuOverlay";
 import { useEffect } from "react";
 import { initLenis } from "../lib/lenis";
 import Preloader from "../components/Preloader/Preloader";
@@ -31,7 +31,7 @@ const MainLayout = () => {
             <PreloaderII />
             <Logo />
             <ReserveBtn />
-            <Navbar />
+            <MenuOverlay />
             <div id="smooth-wrapper">
                 <div id="smooth-content">
                     <main>

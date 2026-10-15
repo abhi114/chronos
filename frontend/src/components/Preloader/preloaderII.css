@@ -81,3 +81,26 @@
     margin-bottom: -0.2rem;
     will-change: transform;
 }
+/* Credit line — fades in at the end of the loading sequence */
+.preloader-credit {
+  color: var(--accent, #b1a696);
+  animation: credit-in 1.2s ease 2.2s both;
+}
+
+.preloader-heart {
+  display: inline-block;
+  color: #e0475b;
+  animation: heart-beat 1.4s ease-in-out 2.4s infinite;
+}
+
+@keyframes credit-in {
+  from { opacity: 0; transform: translateY(10px); filter: blur(4px); }
+  to   { opacity: 0.85; transform: translateY(0); filter: blur(0); }
+}
+
+@keyframes heart-beat {
+  0%, 100% { transform: scale(1); }
+  25%      { transform: scale(1.35); }
+  40%      { transform: scale(1); }
+  60%      { transform: scale(1.25); }
+}

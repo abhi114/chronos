@@ -4,9 +4,9 @@ import ScrollToPlugin from "gsap/ScrollToPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
 
-import acImg1 from "../../assets/activities-1.png";
-import acImg2 from "../../assets/activities-2.png";
-import acImg3 from "../../assets/activities-3.png";
+import acImg1 from "../../assets/gallery-1.jpg";
+import acImg2 from "../../assets/gallery-2.jpg";
+import acImg3 from "../../assets/gallery-3.jpg";
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
@@ -76,8 +76,8 @@ const Showcase = () => {
                 {/* Image 1 */}
                 <div className="relative flex-shrink-0 w-[80vw] h-full overflow-hidden">
                     <div className="w-[77vw] absolute top-10 left-5 flex justify-between items-start text-[#f4efe7]">
-                        <h1 className="text-3xl font-bold">Buggy tours<br /> in the desert</h1>
-                        <p className="border-[1px] rounded-3xl px-2 py-1 text-center text-[0.7rem]">Easy</p>
+                        <h1 className="text-3xl font-bold">Meridian Classic<br /> dress watch</h1>
+                        <p className="border-[1px] rounded-3xl px-2 py-1 text-center text-[0.7rem]">Dress</p>
                     </div>
                     <img
                         src={acImg1}
@@ -85,7 +85,7 @@ const Showcase = () => {
                         className="image-item w-full h-full object-cover rounded-[2.5rem]"
                     />
                     <div className="w-[77vw] absolute bottom-10 left-5 flex justify-between items-start ">
-                        <p className="text-[0.68rem] font-bold text-[#f4efe7]">Explore the terrain on a guided buggy tour that takes<br />you through the desert’s vast and open landscapes.t</p>
+                        <p className="text-[0.68rem] font-bold text-[#f4efe7]">Hand-lacquered dial on a hand-brushed case — the purest<br />expression of the classic dress watch, since 1924.</p>
                         <div className="flex justify-center items-center">
                             <p className="text-[#f4efe7] border-[1px] rounded-3xl px-[1vw] py-1 text-center text-[0.7rem]">01</p>
                             <p className="text-[#4e484e] border-[1px] rounded-3xl px-[1vw] py-1 text-center text-[0.7rem]">03</p>
@@ -96,8 +96,8 @@ const Showcase = () => {
                 {/* Image 2 */}
                 <div className="relative flex-shrink-0 w-[80vw] h-full overflow-hidden">
                     <div className="w-[77vw] absolute top-10 left-5 flex justify-between items-start text-[#f4efe7]">
-                        <h1 className="text-3xl font-bold">Breathtaking<br />desert hikes</h1>
-                        <p className="border-[1px] rounded-3xl px-2 py-1 text-center text-[0.7rem]">Medium</p>
+                        <h1 className="text-3xl font-bold">Abyss Diver<br /> professional</h1>
+                        <p className="border-[1px] rounded-3xl px-2 py-1 text-center text-[0.7rem]">Diver</p>
                     </div>
                     <img
                         src={acImg2}
@@ -105,7 +105,7 @@ const Showcase = () => {
                         className="image-item w-full h-full object-cover rounded-[2.5rem]"
                     />
                     <div className="w-[77vw] absolute bottom-10 left-5 flex justify-between items-start ">
-                        <p className="text-[0.68rem] font-bold text-[#f4efe7]">Explore the terrain on a guided buggy tour that takes<br />you through the desert’s vast and open landscapes.t</p>
+                        <p className="text-[0.68rem] font-bold text-[#f4efe7]">Hand-lacquered dial on a hand-brushed case — the purest<br />expression of the classic dress watch, since 1924.</p>
                         <div className="flex justify-center items-center">
                             <p className="text-[#f4efe7] border-[1px] rounded-3xl px-[1vw] py-1 text-center text-[0.7rem]">02</p>
                             <p className="text-[#4e484e] border-[1px] rounded-3xl px-[1vw] py-1 text-center text-[0.7rem]">03</p>
@@ -116,8 +116,8 @@ const Showcase = () => {
                 {/* Image 3 */}
                 <div className="relative flex-shrink-0 w-[80vw] h-full overflow-hidden">
                     <div className="w-[77vw] absolute top-10 left-5 flex justify-between items-start text-[#f4efe7]">
-                        <h1 className="text-3xl font-bold">Exciting<br /> rock climbing</h1>
-                        <p className="border-[1px] rounded-3xl px-2 py-1 text-center text-[0.7rem]">Hard</p>
+                        <h1 className="text-3xl font-bold">Aviator Chrono<br /> chronograph</h1>
+                        <p className="border-[1px] rounded-3xl px-2 py-1 text-center text-[0.7rem]">Pilot</p>
                     </div>
                     <img
                         src={acImg3}
@@ -125,7 +125,7 @@ const Showcase = () => {
                         className="image-item w-full h-full object-cover rounded-[2.5rem]"
                     />
                     <div className="w-[77vw] absolute bottom-10 left-5 flex justify-between items-start ">
-                        <p className="text-[0.68rem] font-bold text-[#f4efe7]">Explore the terrain on a guided buggy tour that takes<br />you through the desert’s vast and open landscapes.t</p>
+                        <p className="text-[0.68rem] font-bold text-[#f4efe7]">Hand-lacquered dial on a hand-brushed case — the purest<br />expression of the classic dress watch, since 1924.</p>
                         <div className="flex justify-center items-center">
                             <p className="text-[#f4efe7] border-[1px] rounded-3xl px-[1vw] py-1 text-center text-[0.7rem]">03</p>
                             <p className="text-[#4e484e] border-[1px] rounded-3xl px-[1vw] py-1 text-center text-[0.7rem]">03</p>

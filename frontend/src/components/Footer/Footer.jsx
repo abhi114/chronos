@@ -8,25 +8,25 @@ import MarqueeText from '../Marquee/MarqueeText';
 const Footer = () => {
     return (
         <section className='w-screen h-dvh px-6 mt-10'>
-            <p className='text-[.7rem] text-[#eae5dd] choose-subtitle mt-10'>Interested in an amazing adventure?<br />Reserve one of our Capsules<span>®</span></p>
+            <p className='text-[.7rem] text-[#eae5dd] choose-subtitle mt-10'>Ready to begin your collection?<br />Reserve one of our CHRONOS<span>®</span> timepieces</p>
             <div>
                 <MarqueeText />
             </div>
 
             <div className='flex justify-between items-center text-2xl mt-14'>
-                <h3 className='text-[#b1a696]'>This website is just the concept<br />
-                    work done by—Moyra to showcase<br />
-                    our capabilities.<br /><br />
-                    If you would like to outsource a similar<br />
-                    website project—<a href="#" className='text-[#f4efe7] hover:text-[#c4c1b9] underline'> contact us.</a>
+                <h3 className='text-[#b1a696]'>CHRONOS® is a fictional luxury watch<br />
+                    maison concept, created to showcase<br />
+                    timeless web design.<br /><br />
+                    If you would like a similar<br />
+                    website for your brand—<a href="#" className='text-[#f4efe7] hover:text-[#c4c1b9] underline'> contact us.</a>
                 </h3>
 
                 <div className='flex flex-col justify-center items-end'>
-                    <a href="#welcome" className='text-[#f2ede5] text-2xl'>Welcome</a>
-                    <a href="#welcome" className='text-[#f2ede5] text-2xl'>Introduction</a>
-                    <a href="#welcome" className='text-[#f2ede5] text-2xl'>Houses</a>
-                    <a href="#welcome" className='text-[#f2ede5] text-2xl'>Why Capsules®</a>
-                    <a href="#welcome" className='text-[#f2ede5] text-2xl'>Activites</a>
+                    <a href="#welcome" className='text-[#f2ede5] text-2xl'>Collections</a>
+                    <a href="#welcome" className='text-[#f2ede5] text-2xl'>Atelier</a>
+                    <a href="#welcome" className='text-[#f2ede5] text-2xl'>Timepieces</a>
+                    <a href="#welcome" className='text-[#f2ede5] text-2xl'>Why CHRONOS®</a>
+                    <a href="#welcome" className='text-[#f2ede5] text-2xl'>Complications</a>
                     <a href="#welcome" className='text-[#f2ede5] text-2xl'>Feedback</a>
                 </div>
             </div>
@@ -41,8 +41,8 @@ const Footer = () => {
 
                 <div>
                     <p className="text-[0.8rem] text-[#b1a696] text-right">
-                        Meet Capsules®—modern and cozy<br />
-                        houses, in the California desert.
+                        Meet CHRONOS®—mechanical timepieces,<br />
+                        hand-finished in Geneva since 1924.
                     </p>
                 </div>
             </div>

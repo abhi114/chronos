@@ -1,4 +1,4 @@
 export const activitiesLinesLG = [
-    "Discover the",
-    "desert activities"
+    "Explore the",
+    "collections"
 ]

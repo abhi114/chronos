@@ -1,43 +1,43 @@
 export const feedbackH1LG = [
     [
-        "Staying at Capsules® in the",
-        "California desert redefined my",
-        "retreat — modern design meets",
-        "nature, and every sunset feels",
-        "like a serene masterpiece."
+        "My CHRONOS® Meridian is the",
+        "finest watch I have ever owned",
+        "— the movement is a poem of",
+        "gears, and every glance at the",
+        "wrist feels like a ceremony."
     ],
     [
-        "Capsules® offered the perfect",
-        "escape — sleek, modern spaces",
-        "surrounded by desert stillness.",
-        "Each moment felt peaceful,",
-        "grounded, and truly unique."
+        "CHRONOS® delivered the perfect",
+        "dress watch — understated,",
+        "flawlessly finished, and utterly",
+        "timeless. It is the one piece I",
+        "will pass down to my son."
     ],
     [
-        "Capsules® was the perfect",
-        "desert hideaway — stylish,",
-        "peaceful, and fully surrounded",
-        "by stunning views day and",
-        " night."
+        "From the boutique to the",
+        "delivered box, everything felt",
+        "curated. The Abyss wears like a",
+        "dream and keeps time to within",
+        "two seconds a day."
     ]
 ];
 
 export const feedbackReviewLG = [
     [
         "Marcus Simpson",
-        "New York",
+        "Geneva",
         "review1",
         "33%"
     ],
     [
         "Lena Morrison",
-        "Los Angeles",
+        "London",
         "review2",
         "66%"
     ],
     [
         "Jason Whitaker",
-        "San Francisco",
+        "New York",
         "review3",
         "100%"
     ]

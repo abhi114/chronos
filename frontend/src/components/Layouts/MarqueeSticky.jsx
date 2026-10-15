@@ -37,7 +37,7 @@ const MarqueeSticky = () => {
                     <p className="text-[0.7rem] text-[#eae5dd] choose-subtitle">
                         Want to learn more about
                         <br />
-                        the benefits of—Capsules<span>®</span>?
+                        the craft behind—CHRONOS<span>®</span>?
                     </p>
                 </div>
 

@@ -2,8 +2,8 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap/all";
 import { useMediaQuery } from "react-responsive";
 import { welcomeLinesLG, welcomeLinesSM } from "../../constants/welcome";
-import w1 from "../../assets/welcome-1.png"
-import w2 from "../../assets/welcome-2.png"
+import w1 from "../../assets/macro-1.jpg"
+import w2 from "../../assets/craft-1.jpg"
 
 const Welcome = () => {
 
@@ -54,8 +54,8 @@ const Welcome = () => {
                 </div>
                 <div className="md:w-1/2 w-full md:mt-0 mt-10">
                     <p className="md:text-[2rem] text-[1.4rem] text-[#b1a696] md:leading-[1.1] md:pr-24 font-normal leading-[26px] tracking-[-0.2px]">
-                        <span>A place where you can be with yourself and your loved ones.</span><br />
-                        <span>A place where you can experience unforgettable desert things.</span>
+                        <span>A watch that is with you through every milestone of your life.</span><br />
+                        <span>A watch your grandchildren will one day fasten to their own wrist.</span>
                     </p>
                 </div>
             </div>

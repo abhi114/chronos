@@ -4,9 +4,9 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './gallery.css';
 import { BsFillPlusCircleFill } from "react-icons/bs";
 
-import gbg1 from '../../assets/background1.png';
-import gbg2 from '../../assets/background2.png';
-import gbg3 from '../../assets/background3.png';
+import gbg1 from '../../assets/gallery-1.jpg';
+import gbg2 from '../../assets/gallery-2.jpg';
+import gbg3 from '../../assets/gallery-3.jpg';
 import gbg4 from '../../assets/background4.png';
 
 // Register ScrollTrigger plugin
@@ -96,13 +96,13 @@ const Gallery = () => {
         };
     }, []);
 
-    // Generate repeating Capsules® elements
+    // Generate repeating CHRONOS® elements
     const generateCapsules = (quantity = 6) => {
         const capsules = [];
         for (let i = 1; i <= quantity; i++) {
             capsules.push(
                 <h3 key={i} style={{ "--index": i }} className='tracking-tighter'>
-                    Capsules®
+                    CHRONOS®
                 </h3>
             );
         }
@@ -121,15 +121,15 @@ const Gallery = () => {
             </div>
 
             <div className="gallery-background">
-                <img src={gbg1} alt="Classic Capsule" />
+                <img src={gbg1} alt="Meridian Classic watch" />
                 <div className="gallery-topText">
-                    <h4>ClassicCapsule®</h4>
+                    <h4>Meridian Classic®</h4>
                     <h3>(Scroll)</h3>
                 </div>
                 <div className="gallery-bottomText">
                     <div className='w-full flex justify-center items-center gap-0'>
                         <BsFillPlusCircleFill className='w-8 h-8 text-[#b1a696]' />
-                        <h3>Classic Capsule® boasts refined aesthetics and a modern <br /> interior, creating an intimate retreat in a desert landscape</h3>
+                        <h3>The Meridian Classic® pairs a hand-brushed case with a <br /> lacquered dial, a dress watch of quiet, timeless authority</h3>
                     </div>
                     <div className="relative z-9 w-50 h-[0.1rem] bg-[#4f4b48]">
                         <div className="progress-line absolute z-10 bg-[#f4efe7] w-[33%] h-[0.1rem] top-1/2 -translate-y-1/2 left-0"></div>
@@ -138,15 +138,15 @@ const Gallery = () => {
             </div>
 
             <div id="gallery-second" className="gallery-background2">
-                <img src={gbg2} alt="Terrace Capsule" />
+                <img src={gbg2} alt="Abyss Diver watch" />
                 <div className="gallery-topText">
-                    <h4>Terrace Capsule®</h4>
+                    <h4>Abyss Diver®</h4>
                     <h3>(Scroll)</h3>
                 </div>
                 <div className="gallery-bottomText">
                     <div className='w-full flex justify-center items-center gap-0'>
                         <BsFillPlusCircleFill className='w-8 h-8 text-[#b1a696]' />
-                        <h3>Classic Capsule® boasts refined aesthetics and a modern <br /> interior, creating an intimate retreat in a desert landscape</h3>
+                        <h3>The Abyss Diver® is engineered for the deep — a <br /> 300m professional dive watch with a ceramic bezel</h3>
                     </div>
                     <div className="relative z-9 w-50 h-[0.1rem] bg-[#4f4b48]">
                         <div className="progress-line absolute z-10 bg-[#f4efe7] w-[67%] h-[0.1rem] top-1/2 -translate-y-1/2 left-0"></div>
@@ -155,15 +155,15 @@ const Gallery = () => {
             </div>
 
             <div id="gallery-third" className="gallery-background2">
-                <img src={gbg3} alt="Desert Capsule" />
+                <img src={gbg3} alt="Aviator Chrono watch" />
                 <div className="gallery-topText">
-                    <h4>Desert Capsule®</h4>
+                    <h4>Aviator Chrono®</h4>
                     <h3>(Scroll)</h3>
                 </div>
                 <div className="gallery-bottomText">
                     <div className='w-full flex justify-center items-center gap-0'>
                         <BsFillPlusCircleFill className='w-8 h-8 text-[#b1a696]' />
-                        <h3>Classic Capsule® boasts refined aesthetics and a modern <br /> interior, creating an intimate retreat in a desert landscape</h3>
+                        <h3>The Aviator Chrono® carries a flyback chronograph <br /> calibre, built for cockpit legibility and precision</h3>
                     </div>
                     <div className="relative z-9 w-50 h-[0.1rem] bg-[#4f4b48]">
                         <div className="progress-line absolute z-10 bg-[#f4efe7] w-[100%] h-[0.1rem] top-1/2 -translate-y-1/2 left-0"></div>

@@ -1,6 +1,7 @@
 import gsap from "gsap/all";
 import smoke from "../../assets/smoke_final.mp4";
-import mobileHeroBg from "../../assets/hero-mobile.png"
+import heroWatch from "../../assets/hero-watch3.jpg";
+import mobileHeroBg from "../../assets/hero-watch2.jpg"
 import { useGSAP } from "@gsap/react";
 import { useMediaQuery } from "react-responsive";
 
@@ -34,7 +35,14 @@ const Hero = () => {
             <div className="relative w-full h-full rounded-[2.5rem] overflow-hidden">
                 <div className="responsive-mobile">
                     {/* Background image (down layer) */}
-                    <div className="hero-img absolute inset-0 bg-[url('./assets/cap1.png')] bg-no-repeat bg-cover bg-center z-0 md:block hidden" />
+                    <div className="hero-img absolute inset-0 z-0 hidden md:block overflow-hidden bg-[#101010]">
+                        <img
+                            src={heroWatch}
+                            alt="CHRONOS Meridian timepiece"
+                            className="w-full h-full object-cover"
+                        />
+                        <div className="absolute inset-0 bg-black/35" />
+                    </div>
 
                     {/* Mobile image fallback */}
                     <div className="block lg:hidden mt-6 mb-6">
@@ -61,7 +69,7 @@ const Hero = () => {
                             className="text-[#f4efe7] text-start text-6xl md:text-9xl font-bold tracking-wider lg:absolute  lg:left-2"
                             style={{ textShadow: '2px 2px 4px #aaa' }}
                         >
-                            Capsules®
+                            CHRONOS®
                         </h1>
 
                         <div className="w-full h-auto absolute  top-24 md:bottom-[8%] lg:bottom-[9%] flex md:flex-row flex-col md:justify-between md:items-end">
@@ -69,16 +77,16 @@ const Hero = () => {
                                 className="text-start lg:mt-0 md:text-[#f4efe7] text-[#b1a696] text-2xl font-bold md:tracking-wider leading-5 flex flex-col gap-1"
                                 style={{ textShadow: '2px 2px 4px #000' }}
                             >
-                                <span>Closer to</span>
-                                <span>Nature—Closer</span>
-                                <span>to Yourself</span>
+                                <span>Time, Perfected—</span>
+                                <span>Crafted for</span>
+                                <span>Eternity</span>
                             </h2>
 
                             <p
                                 className="md:w-[20%] w-[80%] text-[#f4efe7] text-[0.7rem] font-bold  md:font-medium tracking-wide lg:text-end mt-2 text-justify"
                                 style={{ textShadow: '2px 2px 4px #000' }}
                             >
-                                Spend unforgettable and remarkable time in the Californian desert with—Capsules.
+                                Swiss-made mechanical timepieces, hand-finished in our Geneva atelier since—1924.
                             </p>
                         </div>
                     </div>

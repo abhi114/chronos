@@ -126,7 +126,7 @@ export default function PreloaderII() {
             <div className="preloader-progress">
                 <div className="preloader-progress-bar"></div>
                 <div className="preloader-logo">
-                    <h1>Capsule</h1>
+                    <h1>CHRONOS</h1>
                 </div>
             </div>
 
@@ -135,8 +135,8 @@ export default function PreloaderII() {
             <div className="preloader-content">
                 <div className="preloader-footer">
                     <p className="text-sm">
-                        Meet Capsules®—modern and cozy<br />
-                        houses, in the California desert.
+                        Meet CHRONOS®—mechanical timepieces,<br />
+                        hand-finished in Geneva since 1924.
                     </p>
                 </div>
             </div>
