@@ -3,13 +3,31 @@ import { useGSAP } from "@gsap/react";
 import colimg1 from "../../assets/watch-1.jpg";
 import colimg2 from "../../assets/watch-2.jpg";
 import colimg3 from "../../assets/watch-3.jpg";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import { useMediaQuery } from "react-responsive";
 
 const StickyCols = () => {
 
     const [reveal, setReveal] = useState(false);
+    const sectionRef = useRef(null);
+    const isMobile = useMediaQuery({ maxWidth: 767 });
 
     useGSAP(() => {
+        if (isMobile) {
+            gsap.fromTo(".mobile-watch-card", { y: 36, opacity: 0 }, {
+                y: 0,
+                opacity: 1,
+                duration: 0.8,
+                stagger: 0.18,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: ".mobile-watch-list",
+                    start: "top 85%",
+                    once: true,
+                },
+            });
+            return;
+        }
         gsap.registerPlugin(ScrollTrigger, SplitText);
 
         // 1️⃣ Split text lines once DOM ready
@@ -71,10 +89,26 @@ const StickyCols = () => {
             ScrollTrigger.getAll().forEach((st) => st.kill());
             tl.kill();
         };
-    });
+    }, { scope: sectionRef, dependencies: [isMobile], revertOnUpdate: true });
+
+    const mobileWatches = [
+        { image: colimg1, title: "Admire the finish through the exhibition sapphire caseback", detail: "See the in-house calibre beating through sapphire and admire its hand-finished bridges and rotor." },
+        { image: colimg2, title: "A closer look at the movement", detail: "Precision engineering, finished by hand and made to be seen." },
+        { image: colimg3, title: "Crafted for every moment", detail: "A considered design, built to accompany you for years to come." },
+    ];
 
     return (
-        <section className="sticky-cols w-screen h-dvh overflow-hidden bg-[#181717] lg:mb-20">
+        <section ref={sectionRef} className={`sticky-cols w-screen h-dvh overflow-hidden bg-[#181717] lg:mb-20 ${isMobile ? "sticky-cols-mobile" : ""}`}>
+            {isMobile && <div className="mobile-watch-list">
+                {mobileWatches.map((watch, index) => <article className="mobile-watch-card" key={watch.title}>
+                    <img src={watch.image} alt="CHRONOS watch detail" />
+                    <div className="mobile-watch-copy">
+                        <span>{String(index + 1).padStart(2, "0")} / 03</span>
+                        <h2>{watch.title}</h2>
+                        <p>{watch.detail}</p>
+                    </div>
+                </article>)}
+            </div>}
             <div className="sticky-cols-wrapper relative w-full h-screen">
                 <div className="col col-1">
                     <div className="col-content">

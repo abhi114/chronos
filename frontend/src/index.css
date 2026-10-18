@@ -152,6 +152,27 @@ body {
 	transition: none;
 }
 
+@media (min-width: 769px) {
+	.welcome-story {
+		position: relative;
+		min-height: 100svh;
+		background: radial-gradient(ellipse at 28% 54%, rgba(177, 166, 150, 0.075), transparent 48%);
+	}
+
+	.welcome-story-copy p {
+		will-change: clip-path, transform;
+	}
+
+	.welcome-watch-pair img {
+		aspect-ratio: 1.12;
+		object-fit: cover;
+	}
+
+	.welcome-story-rule span {
+		transform-origin: left center;
+	}
+}
+
 @media (max-width: 768px) {
 	.responsive-mobile {
 		position: absolute;
@@ -327,5 +348,95 @@ body {
 
 	.preloader-footer {
 		width: 75%;
+	}
+}
+
+@media (max-width: 767px) {
+	.choose-section {
+		height: auto;
+		min-height: 100svh;
+	}
+
+	.choose-title-break,
+	.choose-heading {
+		max-width: 100%;
+	}
+
+	.sticky-cols-mobile {
+		height: auto;
+		min-height: 0;
+		overflow: visible;
+		width: 100%;
+		padding: 1.25rem;
+		margin-bottom: 2rem;
+	}
+
+	.sticky-cols-mobile .sticky-cols-wrapper {
+		display: none;
+	}
+
+	.mobile-watch-list {
+		display: grid;
+		gap: 1rem;
+		width: 100%;
+	}
+
+	.mobile-watch-card {
+		position: relative;
+		min-height: 72svh;
+		overflow: hidden;
+		border-radius: 1.5rem;
+		background: #292725;
+		will-change: transform, opacity;
+	}
+
+	.mobile-watch-card > img {
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.mobile-watch-card::after {
+		position: absolute;
+		inset: 35% 0 0;
+		content: "";
+		background: linear-gradient(180deg, transparent, rgba(24, 23, 23, .88));
+	}
+
+	.mobile-watch-copy {
+		position: absolute;
+		z-index: 1;
+		inset: auto 1.25rem 1.25rem;
+		color: #f4efe7;
+	}
+
+	.mobile-watch-copy > span {
+		color: #b1a696;
+		font-size: .75rem;
+		letter-spacing: .12em;
+	}
+
+	.mobile-watch-copy h2 {
+		max-width: 18ch;
+		margin-top: .65rem;
+		font-size: clamp(1.6rem, 7vw, 2.2rem);
+		font-weight: 600;
+		line-height: 1.05;
+	}
+
+	.mobile-watch-copy p {
+		max-width: 34ch;
+		margin-top: .65rem;
+		color: #c8beb0;
+		font-size: .9rem;
+		line-height: 1.45;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.mobile-watch-card {
+		will-change: auto;
 	}
 }

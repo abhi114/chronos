@@ -2,8 +2,10 @@ import { useGSAP } from "@gsap/react";
 import gsap, { SplitText } from "gsap/all";
 import { useMediaQuery } from "react-responsive";
 import { chooseLinesLG, chooseLinesSM } from "../../constants/welcome";
+import { useRef } from "react";
 
 const Choose = () => {
+    const sectionRef = useRef(null);
 
     const isMobD = useMediaQuery({
         query: "(max-width:768px)",
@@ -11,6 +13,22 @@ const Choose = () => {
     const chooseLines = isMobD ? chooseLinesSM : chooseLinesLG;
 
     useGSAP(() => {
+
+        gsap.fromTo(".choose-description, .choose-principle", {
+            y: 28,
+            opacity: 0,
+        }, {
+            y: 0,
+            opacity: 1,
+            duration: 0.75,
+            stagger: 0.09,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: ".choose-details",
+                start: "top 88%",
+                once: true,
+            },
+        });
 
         const lines = gsap.utils.toArray(".choose-title-clip");
 
@@ -57,10 +75,10 @@ const Choose = () => {
                 duration: 1,
             }, "<");
         }
-    });
+    }, { scope: sectionRef });
 
     return (
-        <section className="choose-section w-full h-dvh p-8 pt-10">
+        <section ref={sectionRef} className="choose-section w-full min-h-dvh p-8 pt-10 max-md:px-5 max-md:py-8">
             <p className='text-[.7rem] text-[#eae5dd] choose-subtitle'>Discover the CHRONOS<span>®</span> Collections</p>
             <div className="lg:mt-10 mt-7 title-part origin-bottom ">
                 {
@@ -71,8 +89,8 @@ const Choose = () => {
                     ))
                 }
             </div>
-            <div className="choose-sec w-full flex lg:flex-row flex-col justify-center items-start gap-10 lg:mt-0">
-                <div className='lg:w-1/2 w-full text-[#b1a696] lg:text-[2rem] text-[1rem] md:leading-[1.1] lg:mt-0 mt-8 lg:pr-16'>
+            <div className="choose-sec choose-details w-full flex lg:flex-row flex-col justify-center items-start gap-10 lg:mt-0 max-md:gap-8 max-md:pb-10">
+                <div className='choose-description lg:w-1/2 w-full text-[#b1a696] lg:text-[2rem] text-[1rem] md:leading-[1.1] lg:mt-0 mt-8 lg:pr-16'>
                     <p>You can choose one of three signature timepieces in our collection. Each of our watches meets the highest quality and meets the standards adjusted to your needs. Choose the one you like.</p>
                 </div>
                 <div className='lg:w-1/2 w-full'>
@@ -80,23 +98,23 @@ const Choose = () => {
                         <p className="text-[.7rem] text-[#eae5dd]">Every CHRONOS® timepiece—is built
                             on the same principles:</p>
                     </div>
-                    <div className="flex flex-1 flex-wrap justify-start items-start gap-2 mt-8">
-                        <div className="border-[1px] border-[#b1a696] text-[#b1a696] lg:text-[2rem] px-[20px] py-[4px] rounded-full">
+                    <div className="flex flex-1 flex-wrap justify-start items-start gap-2 mt-8 max-md:mt-5 max-md:gap-2">
+                        <div className="choose-principle border-[1px] border-[#b1a696] text-[#b1a696] lg:text-[2rem] text-[1rem] px-[20px] py-[4px] rounded-full max-md:px-4 max-md:py-2">
                             Swiss-Made
                         </div>
-                        <div className="border-[1px] border-[#f4efe7] text-[#f4efe7] lg:text-[2rem] px-[20px] py-[4px] rounded-full">
+                        <div className="choose-principle border-[1px] border-[#f4efe7] text-[#f4efe7] lg:text-[2rem] text-[1rem] px-[20px] py-[4px] rounded-full max-md:px-4 max-md:py-2">
                             In-House Movements
                         </div>
-                        <div className="border-[1px] border-[#b1a696] text-[#b1a696] lg:text-[2rem] px-[20px] py-[4px] rounded-full">
+                        <div className="choose-principle border-[1px] border-[#b1a696] text-[#b1a696] lg:text-[2rem] text-[1rem] px-[20px] py-[4px] rounded-full max-md:px-4 max-md:py-2">
                             Sapphire
                         </div>
-                        <div className="border-[1px] border-[#f4efe7] text-[#f4efe7] lg:text-[2rem] px-[20px] py-[4px] rounded-full">
+                        <div className="choose-principle border-[1px] border-[#f4efe7] text-[#f4efe7] lg:text-[2rem] text-[1rem] px-[20px] py-[4px] rounded-full max-md:px-4 max-md:py-2">
                             Hand-Finished
                         </div>
-                        <div className="border-[1px] border-[#b1a696] text-[#b1a696] lg:text-[2rem] px-[20px] py-[4px] rounded-full">
+                        <div className="choose-principle border-[1px] border-[#b1a696] text-[#b1a696] lg:text-[2rem] text-[1rem] px-[20px] py-[4px] rounded-full max-md:px-4 max-md:py-2">
                             300m Water Resistance
                         </div>
-                        <div className="border-[1px] border-[#f4efe7] text-[#f4efe7] lg:text-[2rem] px-[20px] py-[4px] rounded-full">
+                        <div className="choose-principle border-[1px] border-[#f4efe7] text-[#f4efe7] lg:text-[2rem] text-[1rem] px-[20px] py-[4px] rounded-full max-md:px-4 max-md:py-2">
                             Exhibition Caseback
                         </div>
                     </div>
